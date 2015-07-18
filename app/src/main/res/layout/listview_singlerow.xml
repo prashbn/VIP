@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView android:id="@+id/imageListView"
+        android:layout_width="80dp" android:layout_height="80dp"
+
+        android:layout_marginTop="5dp" android:layout_marginBottom="10dp" />
+
+    <TextView android:id="@+id/dateTextView" android:layout_width="wrap_content"
+        android:textStyle="bold" android:layout_height="wrap_content"
+        android:text="2011-09-20"
+        android:typeface="sans"
+        android:textSize="5pt" android:layout_marginLeft="15dp"
+        android:layout_alignTop="@+id/imageListView"
+        android:layout_toStartOf="@+id/timeTextView" />
+
+    <TextView android:id="@+id/timeTextView" android:typeface="sans"
+        android:layout_width="wrap_content" android:textStyle="bold"
+        android:layout_height="wrap_content" android:text="12.25"
+        android:layout_marginLeft="15dp" android:textSize="5pt"
+        android:layout_alignTop="@+id/dateTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/confess_txt"
+        android:layout_alignBottom="@+id/imageListView"
+        android:layout_alignEnd="@+id/timeTextView"
+        android:layout_toEndOf="@+id/imageListView"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+    <!-- <ImageView android:id="@+id/separator" android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp" android:layout_toRightOf="@+id/imageListView"
+        android:layout_below="@+id/dateTextView" android:layout_width="150dp" android:layout_height="wrap_content"
+        android:background="@drawable/divider_grey" /> -->
+    <!-- <ImageView android:layout_height="50dp"
+        android:layout_marginLeft="20dp" android:layout_marginTop="25dp"
+        android:id="@+id/cancelImageView" android:layout_width="50dp"
+        android:background="@drawable/button_delete" android:layout_toRightOf="@+id/addTagImageView"></ImageView>
+    <ImageView android:id="@+id/addTagImageView"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:src="@drawable/tag_add" android:layout_below="@+id/timeTextView"
+        android:layout_marginLeft="15dp" android:layout_toRightOf="@+id/imageListView" />-->
+
+
+</RelativeLayout>
